@@ -1,0 +1,13 @@
+<launch>
+  <!-- bring up ur5 --> 
+  <include file="$(find ur_modern_driver)/launch/ur5_bringup_compatible.launch">
+    <arg name="robot_ip" value="172.22.22.2"/>
+  </include>
+
+  <!-- launch robot_dkdc -->
+  <node name="robot_dkdk" pkg="robot_dkdc" type="robot_dkdc" output="screen"/>
+
+  <!-- launch rviz to visualize ur5 -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find robot_dkdc)/rviz/ur5.rviz" />  
+
+</launch>

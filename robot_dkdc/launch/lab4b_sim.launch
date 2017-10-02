@@ -1,0 +1,9 @@
+<launch>
+  <remap from="/arm_controller/command" to="/trajectory_goal"/>
+  <include file="$(find ur_gazebo)/launch/ur5_joint_limited.launch">
+    <arg name="gui" value="false"/>
+  </include>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find robot_dkdc)/rviz/ur5_lab4b.rviz"/>
+  <node name="frame_publisher" pkg="robot_dkdc" type="frame_publisher"/>
+</launch>

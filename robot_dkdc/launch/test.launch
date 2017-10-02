@@ -1,0 +1,3 @@
+<launch>
+  <node name="robot_dkdc" pkg="robot_dkdc" type="robot_dkdc" output="screen"/>
+</launch>

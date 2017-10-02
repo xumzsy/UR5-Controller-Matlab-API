@@ -1,0 +1,21 @@
+# lcsr-wym-170-08
+image_width: 640
+image_height: 480
+camera_name: narrow_stereo
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [636.846048, 0.000000, 308.601952, 0.000000, 640.992861, 258.281256, 0.000000, 0.000000, 1.000000]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [0.067663, -0.141607, 0.005397, -0.000060, 0.000000]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 1.000000]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [643.209839, 0.000000, 308.458220, 0.000000, 0.000000, 645.931213, 260.056982, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000]
